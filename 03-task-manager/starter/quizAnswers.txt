@@ -1,0 +1,20 @@
+1 - Quickly explain how middleware is used in an Express application.
+
+Middleware in an express application is a function that have access to the request and response object and next function. It allows to execute and make changes to the request and response objects.
+
+
+2 - What does CRUD stand for?
+
+Create, Read, Update and Delete/Destroy
+
+
+3 - You are careful to store your sensitive information in a .env file.
+3.1 - How do you get your app to access the information in the .env file?
+
+Using the package dotenv is possible to access variables from a .env file
+
+
+
+3.2 - How do you protect the contents of the .env file so that it is not stored in your github repository?
+
+Including the .env file in the .gitignore file.
