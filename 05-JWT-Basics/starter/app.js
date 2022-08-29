@@ -21,6 +21,9 @@ const port = process.env.PORT || 3000
 
 const start = async () => {
   try {
+    if (!process.env.JWT_SECRET) {
+      throw new Error("Please provide a JWT_SECRET")
+    }
     app.listen(port, () =>
       console.log(`Server is listening on port ${port}...`)
     )
